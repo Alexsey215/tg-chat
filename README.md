@@ -2,7 +2,7 @@
 
 Тестовое задание: веб-интерфейс для отправки и получения текстовых сообщений в Telegram через [GREEN-API](https://green-api.com/telegram). Внешний вид — по мотивам [web.max.ru](https://web.max.ru).
 
-Демо: https://USERNAME.github.io/tg-chat/
+Демо: https://alexsey215.github.io/tg-chat/
 
 ## Как пользоваться
 
