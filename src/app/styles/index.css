@@ -1,0 +1,86 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
+
+@theme inline {
+  --font-sans: -apple-system, system-ui, Roboto, 'Segoe UI', Helvetica, Arial, sans-serif;
+  --font-heading: var(--font-sans);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-surface: var(--surface);
+  --color-selected: var(--selected);
+  --color-bubble-in: var(--bubble-in);
+  --color-bubble-out: var(--bubble-out);
+  --color-chat-from: var(--chat-from);
+  --color-chat-to: var(--chat-to);
+
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: 1rem;
+}
+
+/* Палитра светлой темы web.max.ru */
+:root {
+  --background: #fff;
+  --foreground: #060708;
+  --card: #fff;
+  --card-foreground: #060708;
+  --popover: #fff;
+  --popover-foreground: #060708;
+  --primary: #007aff;
+  --primary-foreground: #fff;
+  --secondary: #e9ebf1;
+  --secondary-foreground: #060708;
+  --muted: #f5f7fa;
+  --muted-foreground: #06070885;
+  --accent: #f6f6f6;
+  --accent-foreground: #060708;
+  --destructive: #ff303c;
+  --border: #9da4ac4d;
+  --input: #09090914;
+  --ring: #007aff;
+  --radius: 0.75rem;
+
+  --surface: #edeef2;
+  --selected: #007aff14;
+  --bubble-in: #fff;
+  --bubble-out: #d9ebff;
+  --chat-from: #99d5d7;
+  --chat-to: #80bcff;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    @apply font-sans;
+  }
+  body {
+    @apply bg-surface text-foreground antialiased;
+  }
+  button:not(:disabled),
+  [role='button']:not(:disabled) {
+    cursor: pointer;
+  }
+}
